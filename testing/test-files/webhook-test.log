@@ -1,0 +1,73 @@
+🚀 Initializing Production Webhook Server...
+🌍 Environment: development
+🔧 Port: 3000
+🔧 Initializing processors...
+✅ Google Ads lead processor initialized
+🚀 Initializing Enhanced Conversions Manager...
+📥 Loading credentials...
+✅ Credentials loaded successfully
+
+🎉 PRODUCTION WEBHOOK SERVER STARTED
+============================================================
+🌐 Server running on port 3000
+🔗 Health check: http://localhost:3000/health
+📊 Status endpoint: http://localhost:3000/status
+📈 Metrics: http://localhost:3000/metrics
+
+📍 Available webhook endpoints:
+   • /webhook/google-ads/conversion - Google Ads conversion tracking
+   • /webhook/google-ads/enhanced-conversion - Google Ads enhanced conversions
+   • /webhook/twilio/call-completed - Twilio call completion notifications
+   • /webhook/twilio/sms-received - Twilio SMS notifications
+   • /webhook/facebook/conversions - Facebook conversions API
+   • /webhook/lead-capture - Generic lead capture from website forms
+   • /webhook/mortgage-application - Mortgage application submissions
+============================================================
+🔧 Initializing Google Ads client...
+✅ Google Ads client initialized
+🔍 Verifying enhanced conversions eligibility...
+🚀 Production webhook server is ready to receive requests!
+📋 Customer account status: 2
+✅ Enhanced conversions eligibility verified
+✅ Enhanced Conversions Manager initialized
+✅ Enhanced conversions manager initialized
+✅ Twilio integration ready (via enhanced conversions)
+🔧 Configuring middleware...
+✅ Middleware configured
+🔧 Configuring webhook routes...
+📍 Configured /webhook/google-ads/conversion (Google Ads conversion tracking)
+📍 Configured /webhook/google-ads/enhanced-conversion (Google Ads enhanced conversions)
+📍 Configured /webhook/twilio/call-completed (Twilio call completion notifications)
+📍 Configured /webhook/twilio/sms-received (Twilio SMS notifications)
+📍 Configured /webhook/facebook/conversions (Facebook conversions API)
+📍 Configured /webhook/lead-capture (Generic lead capture from website forms)
+📍 Configured /webhook/mortgage-application (Mortgage application submissions)
+✅ Webhook routes configured
+🔧 Configuring monitoring endpoints...
+✅ Monitoring endpoints configured
+🔧 Configuring error handling...
+✅ Error handling configured
+✅ Production Webhook Server initialized
+GET /health - 200 (2ms) [::1]
+📥 Processing lead_capture webhook: {
+  ip: '::1',
+  userAgent: 'curl/8.7.1',
+  timestamp: '2025-09-01T00:06:06.118Z'
+}
+🎯 Processing lead capture...
+🎯 Processing Google Ads lead...
+🔍 Enriching lead data...
+📊 Calculating lead score...
+✅ Qualifying lead...
+🎯 Routing lead...
+🔗 Executing integrations...
+💾 Lead record saved: /Users/logan/Mortgage-Campaign-Intelligence/leads/google-ads/lead-GADS_1756685166118_08wb55w9z-2025-09-01T00-06-06-118Z.json
+✅ Lead processed successfully: GADS_1756685166118_08wb55w9z
+📊 Lead Score: 90/100
+🎯 Qualification: qualified
+🔄 Routing: high priority to senior_loan_officer
+✅ Webhook processed successfully (1ms)
+POST /webhook/lead-capture - 200 (2ms) [::1]
+
+🔄 Received SIGTERM, shutting down gracefully...
+✅ Webhook server shut down successfully

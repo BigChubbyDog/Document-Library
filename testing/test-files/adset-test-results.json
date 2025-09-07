@@ -1,0 +1,38 @@
+[
+  {
+    "campaign": "First_Time_Homebuyers_Texas_2025",
+    "test": "minimal",
+    "success": false,
+    "error": "Request failed with status code 400"
+  },
+  {
+    "campaign": "First_Time_Homebuyers_Texas_2025",
+    "test": "housing",
+    "success": false,
+    "error": "Request failed with status code 400"
+  },
+  {
+    "campaign": "Refinance_Homeowners_Texas_2025",
+    "test": "minimal",
+    "success": false,
+    "error": "Request failed with status code 400"
+  },
+  {
+    "campaign": "Refinance_Homeowners_Texas_2025",
+    "test": "housing",
+    "success": false,
+    "error": "Request failed with status code 400"
+  },
+  {
+    "campaign": "Investment_Property_Texas_2025",
+    "test": "minimal",
+    "success": false,
+    "error": "Request failed with status code 400"
+  },
+  {
+    "campaign": "Investment_Property_Texas_2025",
+    "test": "housing",
+    "success": false,
+    "error": "Request failed with status code 400"
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "name": "🏠 First-Time Buyer Pre-Approval",
+  "description": "Special program for first-time buyers",
+  "campaign_alignment": "First-Time Buyer Education Campaign",
+  "target_audience": "30 Days to Your Keys challenge participants",
+  
+  "form_configuration": {
+    "privacy_policy_url": "https://mortgagelc.com/privacy",
+    "follow_up_action_url": "https://mortgagelc.com/first-time-success",
+    
+    "opening_hook": "🎉 Join our First-Time Buyer Program! Special rates and down payment assistance available.",
+    
+    "questions": [
+      {
+        "type": "CUSTOM",
+        "key": "down_payment",
+        "label": "How much can you put down?",
+        "options": [
+          "0-3% (FHA/VA)",
+          "3-5%",
+          "5-10%",
+          "10-20%",
+          "20%+"
+        ],
+        "required": true
+      },
+      {
+        "type": "CUSTOM",
+        "key": "credit_range",
+        "label": "Know your credit score?",
+        "options": [
+          "Excellent (740+)",
+          "Good (680-739)",
+          "Fair (620-679)",
+          "Working on it (<620)",
+          "Not sure"
+        ],
+        "required": true
+      },
+      {
+        "type": "CUSTOM",
+        "key": "income_type",
+        "label": "Employment type?",
+        "options": [
+          "W2 Employee",
+          "Self-employed",
+          "Contract/1099",
+          "Retired",
+          "Other"
+        ],
+        "required": true
+      },
+      {
+        "type": "FULL_NAME",
+        "required": true
+      },
+      {
+        "type": "EMAIL",
+        "required": true
+      },
+      {
+        "type": "PHONE",
+        "required": true
+      }
+    ],
+    
+    "thank_you_page_message": "✅ Pre-approval started! Check your email for next steps and your First-Time Buyer Guide.",
+    
+    "tracking_parameters": {
+      "utm_source": "facebook",
+      "utm_medium": "lead_form",
+      "utm_campaign": "first_time_buyer"
+    }
+  },
+  
+  "special_programs": {
+    "fha_3_5_percent": "FHA loans with 3.5% down",
+    "va_zero_down": "$0 down for qualified veterans",
+    "down_payment_assistance": "Up to $15,000 assistance programs",
+    "first_time_buyer_grants": "Texas state and local grants",
+    "credit_improvement": "Free credit repair included"
+  },
+  
+  "lead_scoring": {
+    "credit_excellent": 20,
+    "credit_good": 10,
+    "credit_fair": 5,
+    "credit_working": -5,
+    "down_payment_20_plus": 15,
+    "down_payment_10_20": 10,
+    "down_payment_5_10": 5,
+    "down_payment_3_5": 5,
+    "down_payment_0_3": 0,
+    "employment_w2": 10,
+    "employment_self": 5,
+    "employment_contract": 5,
+    "employment_retired": 8
+  },
+  
+  "automation_triggers": {
+    "high_score": {
+      "threshold": 80,
+      "actions": ["immediate_call", "priority_assignment", "welcome_package"]
+    },
+    "medium_score": {
+      "threshold": 60,
+      "actions": ["call_within_hour", "first_time_buyer_guide", "credit_consultation"]
+    },
+    "low_score": {
+      "threshold": 40,
+      "actions": ["email_nurture", "credit_improvement_plan", "educational_series"]
+    }
+  }
+}

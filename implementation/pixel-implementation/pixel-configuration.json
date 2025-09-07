@@ -1,0 +1,63 @@
+{
+  "pixel_id": "1072334595033391",
+  "conversion_events": {
+    "lead_form_submission": {
+      "event_name": "Lead",
+      "description": "Mortgage application form submission",
+      "value": 150,
+      "currency": "USD",
+      "trigger_url": "/application/submit",
+      "trigger_element": "#mortgage-application-form"
+    },
+    "quote_request": {
+      "event_name": "InitiateCheckout",
+      "description": "Mortgage rate quote request",
+      "value": 75,
+      "currency": "USD",
+      "trigger_url": "/quote/request",
+      "trigger_element": "#quote-form"
+    },
+    "preapproval_start": {
+      "event_name": "AddToCart",
+      "description": "Pre-approval application started",
+      "value": 100,
+      "currency": "USD",
+      "trigger_url": "/preapproval/start",
+      "trigger_element": "#preapproval-form"
+    },
+    "calculator_usage": {
+      "event_name": "ViewContent",
+      "description": "Mortgage calculator interaction",
+      "value": 25,
+      "currency": "USD",
+      "trigger_url": "/calculator",
+      "trigger_element": ".mortgage-calculator"
+    },
+    "consultation_booking": {
+      "event_name": "Schedule",
+      "description": "Consultation appointment booked",
+      "value": 125,
+      "currency": "USD",
+      "trigger_url": "/consultation/book",
+      "trigger_element": "#consultation-form"
+    },
+    "loan_application": {
+      "event_name": "Purchase",
+      "description": "Complete loan application submitted",
+      "value": 300,
+      "currency": "USD",
+      "trigger_url": "/loan/submit",
+      "trigger_element": "#loan-application-form"
+    },
+    "email_signup": {
+      "event_name": "Subscribe",
+      "description": "Newsletter or updates subscription",
+      "value": 15,
+      "currency": "USD",
+      "trigger_url": "/newsletter/signup",
+      "trigger_element": "#newsletter-form"
+    }
+  },
+  "setup_date": "2025-09-05T17:24:41.504Z",
+  "implementation_ready": true
+}

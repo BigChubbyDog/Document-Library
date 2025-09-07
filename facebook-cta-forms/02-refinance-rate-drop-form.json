@@ -1,0 +1,158 @@
+{
+  "form_name": "Rate Drop Refinance Calculator",
+  "campaign_correlation": "Refi_RateDrop_Q1_2024_1755654844771",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "Homeowners aged 35-65, income $100K+",
+  "expected_cpl": "$38",
+  "configuration": {
+    "headline": "⚡ Rates Just Dropped: Save $457/Month on Your Mortgage",
+    "subheadline": "🏠 Homeowners: Lock in TODAY's lower rates before they rise again!",
+    "intro_text": "✅ Average savings of $457 monthly\n✅ No closing costs option available\n✅ Quick close in as few as 21 days\n\nDon't wait - rates this low won't last long. See your personalized savings in 60 seconds.",
+    "privacy_statement": "Your information is secure and will only be used to calculate your refinance savings.",
+    "thank_you_message": {
+      "headline": "💰 Your Savings Calculation is Ready!",
+      "message": "Check your email for your personalized refinance analysis. Our rate specialist will also call you within 2 hours to discuss your options.",
+      "follow_up": "Expected call from (737) 330-1489 - Your rate is locked for 24 hours!"
+    }
+  },
+  "questions": [
+    {
+      "id": "current_rate",
+      "type": "slider",
+      "question": "What's your current mortgage rate?",
+      "subtitle": "Even small rate improvements can save thousands!",
+      "values": [
+        {"label": "Under 4%", "value": "under_4", "score": 5},
+        {"label": "4.0% - 4.5%", "value": "4_to_4_5", "score": 6},
+        {"label": "4.5% - 5.0%", "value": "4_5_to_5", "score": 7},
+        {"label": "5.0% - 5.5%", "value": "5_to_5_5", "score": 9},
+        {"label": "5.5% - 6.0%", "value": "5_5_to_6", "score": 10},
+        {"label": "Over 6.0%", "value": "over_6", "score": 10}
+      ],
+      "required": true
+    },
+    {
+      "id": "current_balance",
+      "type": "range_slider",
+      "question": "What's your current mortgage balance?",
+      "subtitle": "We'll calculate your exact monthly savings",
+      "ranges": [
+        {"label": "$100K - $200K", "value": "100-200k", "savings_display": "Save $200-$400/month"},
+        {"label": "$200K - $300K", "value": "200-300k", "savings_display": "Save $300-$500/month"},
+        {"label": "$300K - $500K", "value": "300-500k", "savings_display": "Save $400-$700/month"},
+        {"label": "$500K+", "value": "500k_plus", "savings_display": "Save $700+/month"}
+      ],
+      "required": true
+    },
+    {
+      "id": "years_remaining",
+      "type": "multiple_choice",
+      "question": "How many years left on your current mortgage?",
+      "options": [
+        {"text": "25+ years remaining", "value": "25_plus", "score": 10},
+        {"text": "20-25 years", "value": "20_25", "score": 9},
+        {"text": "15-20 years", "value": "15_20", "score": 8},
+        {"text": "10-15 years", "value": "10_15", "score": 6},
+        {"text": "Under 10 years", "value": "under_10", "score": 4}
+      ],
+      "required": true
+    },
+    {
+      "id": "closing_costs_preference",
+      "type": "multiple_choice",
+      "question": "What's most important to you?",
+      "subtitle": "We have options for both!",
+      "options": [
+        {"text": "💰 NO closing costs (slightly higher rate)", "value": "no_closing_costs", "score": 9},
+        {"text": "📉 LOWEST rate possible (pay closing costs)", "value": "lowest_rate", "score": 10},
+        {"text": "🤔 Show me both options", "value": "show_both", "score": 8}
+      ],
+      "required": true
+    },
+    {
+      "id": "timeline_urgency",
+      "type": "multiple_choice",
+      "question": "When do you want to close?",
+      "subtitle": "Rates are rising - timing matters!",
+      "options": [
+        {"text": "🔥 ASAP - Lock today's rate!", "value": "asap", "score": 10},
+        {"text": "📅 Next 30 days", "value": "30_days", "score": 9},
+        {"text": "⏰ 30-60 days", "value": "60_days", "score": 7},
+        {"text": "🤷 Just exploring options", "value": "exploring", "score": 4}
+      ],
+      "required": true
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "We'll call with your rate quote within 2 hours!"
+    },
+    {
+      "field": "current_address",
+      "label": "Property Address",
+      "required": true,
+      "placeholder": "123 Main St, City, State",
+      "subtitle": "For accurate property value assessment"
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": true,
+    "social_proof": {
+      "counter": "1,847 homeowners saved money this week",
+      "live_activity": "23 people calculating savings right now"
+    },
+    "urgency": {
+      "timer": "Rate lock expires in: 23:47:12",
+      "scarcity": "Limited no-closing-cost slots available today"
+    },
+    "trust_signals": [
+      "NMLS #2044646",
+      "Better Business Bureau A+ Rating",
+      "4.9★ Google Reviews (2,100+ reviews)",
+      "Licensed in 50 States"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 30,
+    "warm_lead_threshold": 20,
+    "scoring_factors": {
+      "rate_over_5_percent": 10,
+      "timeline_asap": 10,
+      "balance_over_300k": 8,
+      "no_closing_costs_preferred": 7,
+      "years_remaining_25_plus": 9
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_rate_quote_email": true,
+      "schedule_call": "2_hours",
+      "lock_rate_24_hours": true
+    },
+    "hot_leads": {
+      "notify_rate_specialist": "immediate",
+      "priority_queue": "A1",
+      "call_within": "1_hour"
+    },
+    "warm_leads": {
+      "email_sequence": "refinance_nurture_7_day",
+      "call_within": "4_hours"
+    }
+  }
+}

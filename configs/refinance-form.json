@@ -1,0 +1,140 @@
+{
+  "name": "💰 Refinance Savings Calculator",
+  "description": "See how much you could save refinancing",
+  "campaign_alignment": "Harvest Your Equity Fall Campaign",
+  "target_audience": "Existing homeowners with equity",
+  
+  "form_configuration": {
+    "privacy_policy_url": "https://mortgagelc.com/privacy",
+    "follow_up_action_url": "https://mortgagelc.com/refinance-savings",
+    
+    "opening_hook": "💰 Calculate your potential savings! Most Texas homeowners save $200-500/month refinancing.",
+    
+    "questions": [
+      {
+        "type": "CUSTOM",
+        "key": "current_rate",
+        "label": "Current interest rate?",
+        "options": [
+          "Above 7%",
+          "6-7%",
+          "5-6%",
+          "4-5%",
+          "Below 4%"
+        ],
+        "required": true
+      },
+      {
+        "type": "CUSTOM",
+        "key": "loan_balance",
+        "label": "Remaining loan balance?",
+        "options": [
+          "Under $100k",
+          "$100k-200k",
+          "$200k-400k",
+          "$400k-600k",
+          "Over $600k"
+        ],
+        "required": true
+      },
+      {
+        "type": "CUSTOM",
+        "key": "refi_goal",
+        "label": "Refinance goal?",
+        "options": [
+          "Lower payment",
+          "Cash out equity",
+          "Shorter term",
+          "Remove PMI"
+        ],
+        "required": true
+      },
+      {
+        "type": "FULL_NAME",
+        "required": true
+      },
+      {
+        "type": "EMAIL",
+        "required": true
+      },
+      {
+        "type": "PHONE",
+        "required": true
+      }
+    ],
+    
+    "thank_you_page_message": "📊 Calculating your savings... You could save $200-500/month! Your personalized savings report is being prepared.",
+    
+    "tracking_parameters": {
+      "utm_source": "facebook",
+      "utm_medium": "lead_form", 
+      "utm_campaign": "refinance"
+    }
+  },
+  
+  "savings_calculator": {
+    "current_rate_above_7": {
+      "potential_savings": "$400-600/month",
+      "priority": "high"
+    },
+    "current_rate_6_7": {
+      "potential_savings": "$250-400/month",
+      "priority": "high"
+    },
+    "current_rate_5_6": {
+      "potential_savings": "$100-250/month",
+      "priority": "medium"
+    },
+    "current_rate_4_5": {
+      "potential_savings": "$50-150/month",
+      "priority": "medium"
+    },
+    "current_rate_below_4": {
+      "potential_savings": "Cash-out options available",
+      "priority": "low"
+    }
+  },
+  
+  "lead_scoring": {
+    "rate_above_7": 30,
+    "rate_6_7": 25,
+    "rate_5_6": 15,
+    "rate_4_5": 10,
+    "rate_below_4": 5,
+    "balance_over_600k": 20,
+    "balance_400_600k": 15,
+    "balance_200_400k": 10,
+    "balance_100_200k": 5,
+    "balance_under_100k": 0,
+    "goal_lower_payment": 15,
+    "goal_cash_out": 20,
+    "goal_shorter_term": 10,
+    "goal_remove_pmi": 12
+  },
+  
+  "automation_triggers": {
+    "hot_refinance": {
+      "threshold": 85,
+      "criteria": ["rate_above_7", "balance_over_400k"],
+      "actions": ["immediate_call", "rate_lock_offer", "savings_calculator"]
+    },
+    "warm_refinance": {
+      "threshold": 60,
+      "criteria": ["rate_6_7", "balance_200_600k"],
+      "actions": ["call_within_2_hours", "personalized_analysis", "equity_report"]
+    },
+    "cash_out_candidate": {
+      "threshold": 70,
+      "criteria": ["goal_cash_out", "balance_over_200k"],
+      "actions": ["equity_consultation", "investment_options", "tax_benefits"]
+    }
+  },
+  
+  "follow_up_sequence": {
+    "immediate": "Savings calculation and rate lock offer",
+    "day_1": "Personalized refinance analysis report",
+    "day_3": "Market update and rate trends",
+    "day_7": "Success stories from similar situations",
+    "day_14": "Rate alert signup and market forecast"
+  }
+}

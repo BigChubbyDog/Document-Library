@@ -1,0 +1,254 @@
+{
+  "form_name": "First-Time Buyer Educational Guide",
+  "campaign_correlation": "FTB_Educational_Funnel_Q1_2024_17853",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "First-time homebuyers aged 28-35, income $75K+",
+  "expected_cpl": "$32",
+  "configuration": {
+    "headline": "Worried About Down Payment Size?",
+    "subheadline": "Did you know you can become a homeowner with just 3% down?",
+    "intro_text": "Discover how modern mortgage programs are making homeownership more accessible than ever. Get expert guidance for first-time buyers in 60 seconds.",
+    "privacy_statement": "Your information is secure and will only be used to provide your personalized home buying guide.",
+    "thank_you_message": {
+      "headline": "🎉 Your Home Buying Guide is Ready!",
+      "message": "Check your email for your personalized roadmap. Our first-time buyer specialist will also text you within 24 hours with your next steps.",
+      "follow_up": "Watch for a text from (737) 330-1489 with your pre-approval offer!"
+    }
+  },
+  "questions": [
+    {
+      "id": "homeownership_goal",
+      "type": "multiple_choice",
+      "question": "What's your homeownership goal?",
+      "options": [
+        {
+          "text": "🏡 Buy my first home",
+          "value": "first_time_buyer",
+          "score": 10
+        },
+        {
+          "text": "🔄 Upgrade to a bigger home",
+          "value": "move_up_buyer",
+          "score": 8
+        },
+        {
+          "text": "🏠 Downsize to smaller home",
+          "value": "downsize",
+          "score": 6
+        },
+        {
+          "text": "💡 Just exploring options",
+          "value": "exploring",
+          "score": 3
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "location_preference",
+      "type": "dropdown",
+      "question": "Where in Texas are you looking?",
+      "options": [
+        "Houston Metro",
+        "Dallas-Fort Worth",
+        "Austin",
+        "San Antonio",
+        "Other Texas City"
+      ],
+      "required": true
+    },
+    {
+      "id": "timeline",
+      "type": "slider",
+      "question": "When do you want to buy?",
+      "min_label": "ASAP",
+      "max_label": "2+ Years",
+      "values": [
+        {
+          "label": "Next 3 months",
+          "value": "0-3_months",
+          "score": 10
+        },
+        {
+          "label": "3-6 months",
+          "value": "3-6_months",
+          "score": 9
+        },
+        {
+          "label": "6-12 months",
+          "value": "6-12_months",
+          "score": 7
+        },
+        {
+          "label": "1-2 years",
+          "value": "1-2_years",
+          "score": 4
+        },
+        {
+          "label": "2+ years",
+          "value": "2_plus_years",
+          "score": 2
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "price_range",
+      "type": "range_slider",
+      "question": "What's your target price range?",
+      "subtitle": "Don't worry - we'll show you what you can actually afford!",
+      "ranges": [
+        {
+          "label": "$150K - $250K",
+          "value": "150-250k",
+          "monthly_display": "~$1,200-$2,000/month"
+        },
+        {
+          "label": "$250K - $350K",
+          "value": "250-350k",
+          "monthly_display": "~$2,000-$2,800/month"
+        },
+        {
+          "label": "$350K - $500K",
+          "value": "350-500k",
+          "monthly_display": "~$2,800-$4,000/month"
+        },
+        {
+          "label": "$500K+",
+          "value": "500k_plus",
+          "monthly_display": "~$4,000+/month"
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "credit_confidence",
+      "type": "multiple_choice",
+      "question": "How would you describe your credit?",
+      "subtitle": "No judgment - we work with all credit situations!",
+      "options": [
+        {
+          "text": "Excellent (I check it regularly)",
+          "value": "excellent",
+          "score": 10
+        },
+        {
+          "text": "Good (Few late payments)",
+          "value": "good",
+          "score": 8
+        },
+        {
+          "text": "Fair (Some challenges)",
+          "value": "fair",
+          "score": 6
+        },
+        {
+          "text": "Not sure (Haven't checked)",
+          "value": "unknown",
+          "score": 4
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "down_payment_saved",
+      "type": "multiple_choice",
+      "question": "How much do you have saved for down payment?",
+      "subtitle": "Remember: You might need less than you think!",
+      "options": [
+        {
+          "text": "$20K+ ready to go",
+          "value": "20k_plus",
+          "score": 10
+        },
+        {
+          "text": "$10K-$20K saved",
+          "value": "10-20k",
+          "score": 8
+        },
+        {
+          "text": "$5K-$10K saved",
+          "value": "5-10k",
+          "score": 6
+        },
+        {
+          "text": "Less than $5K",
+          "value": "under_5k",
+          "score": 5
+        },
+        {
+          "text": "Still saving",
+          "value": "still_saving",
+          "score": 3
+        }
+      ],
+      "required": true
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "We'll text you your personalized results!"
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": true,
+    "social_proof": {
+      "counter": "Join 4,387 Texas families this month",
+      "live_activity": "17 people viewing this guide right now"
+    },
+    "urgency": {
+      "timer": "Rates locked for next: 4:23:15",
+      "scarcity": "Limited spots in our First-Time Buyer Workshop"
+    },
+    "trust_signals": [
+      "NMLS #2044646",
+      "BBB A+ Rating", 
+      "4.9★ Google Reviews",
+      "Texas Licensed Lender"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 25,
+    "warm_lead_threshold": 15,
+    "scoring_factors": {
+      "timeline_0_3_months": 10,
+      "timeline_3_6_months": 9,
+      "credit_excellent": 10,
+      "credit_good": 8,
+      "down_payment_20k_plus": 10,
+      "first_time_buyer": 10
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_welcome_email": true,
+      "schedule_text_followup": "24_hours",
+      "add_to_nurture_sequence": "first_time_buyer_education"
+    },
+    "hot_leads": {
+      "notify_loan_officer": "immediate",
+      "priority_queue": "A1",
+      "call_within": "2_hours"
+    },
+    "warm_leads": {
+      "email_sequence": "first_time_buyer_7_day",
+      "call_within": "24_hours"
+    }
+  }
+}

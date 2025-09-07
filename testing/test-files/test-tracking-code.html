@@ -1,0 +1,22 @@
+<!-- Test Google Ads Conversion Tracking Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-6590506327"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'AW-6590506327', {
+    'conversion_linker': true,
+    'enhanced_conversions': true
+  });
+  
+  // Test conversion function
+  function testMortgageApplicationConversion(value, transactionId) {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-6590506327/TEST_CONVERSION',
+      'value': value || 150.0,
+      'currency': 'USD',
+      'transaction_id': transactionId || 'test_' + Date.now()
+    });
+  }
+</script>

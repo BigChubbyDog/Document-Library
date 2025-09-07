@@ -1,0 +1,206 @@
+{
+  "standardEvents": {
+    "PageView": {
+      "parameters": {
+        "content_type": "product",
+        "content_ids": [
+          "mortgage_page"
+        ],
+        "value": 0,
+        "currency": "USD"
+      }
+    },
+    "ViewContent": {
+      "parameters": {
+        "content_type": "product",
+        "content_ids": [
+          "fha_loan",
+          "va_loan",
+          "conventional"
+        ],
+        "content_name": "Loan Product View",
+        "value": 0,
+        "currency": "USD",
+        "loan_type": "dynamic",
+        "credit_range": "dynamic",
+        "down_payment_range": "dynamic"
+      }
+    },
+    "Search": {
+      "parameters": {
+        "search_string": "dynamic",
+        "content_category": "mortgage_rates",
+        "content_type": "product",
+        "value": 5,
+        "currency": "USD"
+      }
+    },
+    "AddToCart": {
+      "parameters": {
+        "content_type": "product",
+        "content_ids": [
+          "loan_application"
+        ],
+        "content_name": "Started Application",
+        "value": 25,
+        "currency": "USD",
+        "estimated_loan_amount": "dynamic",
+        "property_location": "dynamic"
+      }
+    },
+    "InitiateCheckout": {
+      "parameters": {
+        "content_category": "mortgage_application",
+        "content_ids": [
+          "application_id"
+        ],
+        "num_items": 1,
+        "value": 50,
+        "currency": "USD",
+        "lead_score": "dynamic",
+        "pre_qualified": "dynamic"
+      }
+    },
+    "Lead": {
+      "parameters": {
+        "content_name": "Mortgage Lead",
+        "content_category": "lead_form",
+        "value": 100,
+        "currency": "USD",
+        "lead_source": "dynamic",
+        "lead_quality": "dynamic",
+        "timeline": "dynamic",
+        "loan_purpose": "dynamic"
+      }
+    },
+    "CompleteRegistration": {
+      "parameters": {
+        "content_name": "Application Complete",
+        "status": true,
+        "value": 200,
+        "currency": "USD",
+        "loan_amount": "dynamic",
+        "property_value": "dynamic",
+        "ltv_ratio": "dynamic",
+        "credit_score": "dynamic"
+      }
+    },
+    "Purchase": {
+      "parameters": {
+        "content_type": "product",
+        "content_ids": [
+          "closed_loan"
+        ],
+        "content_name": "Loan Closed",
+        "num_items": 1,
+        "value": 5000,
+        "currency": "USD",
+        "loan_type": "dynamic",
+        "interest_rate": "dynamic",
+        "loan_term": "dynamic",
+        "closing_costs": "dynamic"
+      }
+    }
+  },
+  "customEvents": {
+    "CalculatorInteraction": {
+      "description": "User interacted with mortgage calculator",
+      "parameters": {
+        "calculator_type": "payment|affordability|refinance",
+        "loan_amount_range": "$0-200k|$200-400k|$400-600k|$600k+",
+        "down_payment_percent": "0-3|3-10|10-20|20+",
+        "calculated_payment": "dynamic",
+        "interaction_depth": "low|medium|high"
+      },
+      "value": 10
+    },
+    "RateQuoteView": {
+      "description": "User viewed personalized rate quote",
+      "parameters": {
+        "quoted_rate": "dynamic",
+        "rate_type": "fixed|variable",
+        "loan_term": "15|30",
+        "points": "0|1|2",
+        "apr": "dynamic"
+      },
+      "value": 30
+    },
+    "PreApprovalStart": {
+      "description": "Started pre-approval process",
+      "parameters": {
+        "step_number": "1|2|3|4|5",
+        "time_on_step": "dynamic",
+        "fields_completed": "dynamic"
+      },
+      "value": 40
+    },
+    "DocumentUpload": {
+      "description": "Uploaded required documents",
+      "parameters": {
+        "document_type": "paystub|tax|bank|id",
+        "upload_method": "manual|auto",
+        "documents_remaining": "dynamic"
+      },
+      "value": 60
+    },
+    "CreditCheck": {
+      "description": "Authorized credit check",
+      "parameters": {
+        "credit_range": "580-|620-679|680-739|740+",
+        "pre_qualification_status": "qualified|conditional|declined"
+      },
+      "value": 80
+    },
+    "AppointmentScheduled": {
+      "description": "Scheduled consultation",
+      "parameters": {
+        "appointment_type": "phone|video|in-person",
+        "time_to_appointment": "same-day|next-day|this-week|next-week",
+        "loan_officer": "dynamic"
+      },
+      "value": 150
+    },
+    "PropertySelected": {
+      "description": "Selected a property",
+      "parameters": {
+        "property_type": "single-family|condo|townhouse|multi-family",
+        "price_range": "dynamic",
+        "location": "dynamic",
+        "mls_number": "dynamic"
+      },
+      "value": 250
+    }
+  },
+  "serverSideEvents": {
+    "enabled": true,
+    "endpoint": "https://mortgagelc.com/api/meta-capi",
+    "events": [
+      "Lead",
+      "CompleteRegistration",
+      "Purchase",
+      "CreditCheck",
+      "DocumentUpload"
+    ],
+    "hashingEnabled": true,
+    "matchKeys": [
+      "email",
+      "phone",
+      "fn",
+      "ln",
+      "zip",
+      "ct",
+      "st"
+    ]
+  },
+  "utmTracking": {
+    "utm_source": "facebook|instagram|messenger|audience_network",
+    "utm_medium": "cpc|cpm|video|carousel|collection",
+    "utm_campaign": "dynamic_campaign_name",
+    "utm_content": "dynamic_ad_id",
+    "utm_term": "dynamic_audience_segment",
+    "utm_loan_type": "fha|va|conventional|jumbo|refinance",
+    "utm_audience": "first_time|move_up|investor|refinance",
+    "utm_creative": "video_testimonial|carousel_rates|single_cta",
+    "utm_offer": "no_fees|fast_close|low_down|rate_special"
+  }
+}

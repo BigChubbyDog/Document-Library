@@ -1,0 +1,67 @@
+[
+  {
+    "name": "High-Value Lead",
+    "description": "Loan amount > $500k or credit score > 740",
+    "rule": {
+      "event_type": "Lead",
+      "conditions": [
+        {
+          "parameter": "loan_amount",
+          "operator": ">",
+          "value": 500000
+        },
+        {
+          "parameter": "credit_score",
+          "operator": ">",
+          "value": 740
+        }
+      ]
+    },
+    "value": 500
+  },
+  {
+    "name": "Qualified Application",
+    "description": "Complete app with pre-qualification",
+    "rule": {
+      "event_type": "CompleteRegistration",
+      "conditions": [
+        {
+          "parameter": "pre_qualified",
+          "operator": "=",
+          "value": true
+        }
+      ]
+    },
+    "value": 300
+  },
+  {
+    "name": "Fast-Track Lead",
+    "description": "Ready to buy in < 30 days",
+    "rule": {
+      "event_type": "Lead",
+      "conditions": [
+        {
+          "parameter": "timeline",
+          "operator": "=",
+          "value": "immediate"
+        }
+      ]
+    },
+    "value": 250
+  },
+  {
+    "name": "VA Loan Lead",
+    "description": "Veteran seeking VA loan",
+    "rule": {
+      "event_type": "Lead",
+      "conditions": [
+        {
+          "parameter": "loan_type",
+          "operator": "=",
+          "value": "va"
+        }
+      ]
+    },
+    "value": 200
+  }
+]

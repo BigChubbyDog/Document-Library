@@ -1,0 +1,99 @@
+{
+  "migration": {
+    "date": "2025-09-07T02:57:44.745Z",
+    "source_repository": "mortgage-campaign-intelligence",
+    "files_moved": 13,
+    "categories": [
+      "implementation",
+      "archived",
+      "integration",
+      "legacy"
+    ]
+  },
+  "files": [
+    {
+      "type": "file",
+      "source": "CLEANUP_SUMMARY.md",
+      "destination": "implementation/CLEANUP_SUMMARY.md",
+      "timestamp": "2025-09-07T02:57:44.693Z"
+    },
+    {
+      "type": "file",
+      "source": "REPOSITORY_ORGANIZATION_COMPLETE.md",
+      "destination": "implementation/REPOSITORY_ORGANIZATION_COMPLETE.md",
+      "timestamp": "2025-09-07T02:57:44.694Z"
+    },
+    {
+      "type": "file",
+      "source": "SETUP_REPORT.md",
+      "destination": "implementation/SETUP_REPORT.md",
+      "timestamp": "2025-09-07T02:57:44.695Z"
+    },
+    {
+      "type": "file",
+      "source": "forms/IMPLEMENTATION_GUIDE.md",
+      "destination": "implementation/IMPLEMENTATION_GUIDE.md",
+      "timestamp": "2025-09-07T02:57:44.696Z"
+    },
+    {
+      "type": "file",
+      "source": "forms/README.md",
+      "destination": "implementation/README.md",
+      "timestamp": "2025-09-07T02:57:44.696Z"
+    },
+    {
+      "type": "directory",
+      "source": "forms/documentation/",
+      "destination": "implementation/documentation",
+      "timestamp": "2025-09-07T02:57:44.698Z"
+    },
+    {
+      "type": "directory",
+      "source": "m365-d365-integration/documentation/",
+      "destination": "implementation/documentation",
+      "timestamp": "2025-09-07T02:57:44.699Z"
+    },
+    {
+      "type": "file",
+      "source": "m365-d365-integration/README.md",
+      "destination": "implementation/README.md",
+      "timestamp": "2025-09-07T02:57:44.699Z"
+    },
+    {
+      "type": "file",
+      "source": "mortgage-campaign-intelligence/README-ENTERPRISE.md",
+      "destination": "implementation/README-ENTERPRISE.md",
+      "timestamp": "2025-09-07T02:57:44.700Z"
+    },
+    {
+      "type": "directory",
+      "source": ".archive/",
+      "destination": "archived/.archive",
+      "timestamp": "2025-09-07T02:57:44.744Z"
+    },
+    {
+      "type": "file",
+      "source": "insights/performance-summary.md",
+      "destination": "archived/performance-summary.md",
+      "timestamp": "2025-09-07T02:57:44.744Z"
+    },
+    {
+      "type": "file",
+      "source": "docs/d365-integration-status.md",
+      "destination": "integration/d365-integration-status.md",
+      "timestamp": "2025-09-07T02:57:44.745Z"
+    },
+    {
+      "type": "file",
+      "source": "docs/URL_MANAGEMENT_SYSTEM.md",
+      "destination": "integration/URL_MANAGEMENT_SYSTEM.md",
+      "timestamp": "2025-09-07T02:57:44.745Z"
+    }
+  ],
+  "structure": {
+    "implementation": "Setup guides, configuration documentation, implementation guides",
+    "archived": "Historical files, test results, development artifacts, archived components",
+    "integration": "Integration guides, API documentation, system integration status",
+    "legacy": "Outdated documentation, legacy guides, deprecated files"
+  }
+}

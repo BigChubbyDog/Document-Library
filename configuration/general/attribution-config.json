@@ -1,0 +1,92 @@
+{
+  "attributionWindows": {
+    "click_window": "7_days",
+    "view_window": "1_day",
+    "custom_windows": {
+      "high_value_conversions": {
+        "click": "28_days",
+        "view": "1_day"
+      },
+      "micro_conversions": {
+        "click": "1_day",
+        "view": "1_day"
+      }
+    }
+  },
+  "attributionModels": {
+    "default": "last_click",
+    "comparison_models": [
+      "first_click",
+      "linear",
+      "time_decay",
+      "position_based",
+      "data_driven"
+    ],
+    "custom_model": {
+      "name": "Mortgage Journey Model",
+      "weights": {
+        "first_touch": 0.15,
+        "calculator_use": 0.2,
+        "rate_quote": 0.25,
+        "application_start": 0.3,
+        "last_touch": 0.1
+      }
+    }
+  },
+  "offlineConversions": {
+    "enabled": true,
+    "upload_schedule": "daily",
+    "events": [
+      {
+        "name": "Phone Lead",
+        "source": "call_tracking",
+        "match_keys": [
+          "phone"
+        ],
+        "value_calculation": "average_lead_value"
+      },
+      {
+        "name": "In-Person Consultation",
+        "source": "crm",
+        "match_keys": [
+          "email",
+          "phone"
+        ],
+        "value_calculation": "opportunity_value"
+      },
+      {
+        "name": "Loan Closed",
+        "source": "los_system",
+        "match_keys": [
+          "email",
+          "phone",
+          "name"
+        ],
+        "value_calculation": "commission_amount"
+      }
+    ]
+  },
+  "incrementalityTesting": {
+    "enabled": true,
+    "test_type": "conversion_lift",
+    "control_group_size": 0.1,
+    "test_duration_days": 30,
+    "success_metrics": [
+      "incremental_leads",
+      "incremental_revenue"
+    ]
+  },
+  "crossDeviceTracking": {
+    "enabled": true,
+    "identity_matching": [
+      "email",
+      "phone",
+      "login_id"
+    ],
+    "device_graphs": [
+      "facebook",
+      "deterministic"
+    ],
+    "cookieless_tracking": true
+  }
+}

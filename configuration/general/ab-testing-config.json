@@ -1,0 +1,161 @@
+{
+  "campaignTests": [
+    {
+      "name": "Audience Test - First-Time vs Move-Up Buyers",
+      "type": "AUDIENCE_SPLIT",
+      "variants": [
+        {
+          "name": "First-Time Buyers",
+          "audience": "first_time_buyers_custom",
+          "budget_percent": 50
+        },
+        {
+          "name": "Move-Up Buyers",
+          "audience": "move_up_buyers_custom",
+          "budget_percent": 50
+        }
+      ],
+      "success_metric": "cost_per_lead"
+    },
+    {
+      "name": "Creative Test - Video vs Carousel",
+      "type": "CREATIVE_SPLIT",
+      "variants": [
+        {
+          "name": "Video Testimonials",
+          "format": "VIDEO",
+          "creative_ids": [
+            "video_1",
+            "video_2",
+            "video_3"
+          ]
+        },
+        {
+          "name": "Rate Carousel",
+          "format": "CAROUSEL",
+          "creative_ids": [
+            "carousel_1",
+            "carousel_2"
+          ]
+        }
+      ],
+      "success_metric": "click_through_rate"
+    },
+    {
+      "name": "Offer Test - No Fees vs Fast Close",
+      "type": "MESSAGE_SPLIT",
+      "variants": [
+        {
+          "name": "No Lender Fees",
+          "headline": "Zero Lender Fees - Save $3,000+",
+          "description": "Get approved with absolutely no lender fees",
+          "cta": "Save Now"
+        },
+        {
+          "name": "15-Day Close",
+          "headline": "Close in 15 Days Guaranteed",
+          "description": "Fastest closings in Texas - guaranteed",
+          "cta": "Get Started"
+        }
+      ],
+      "success_metric": "conversion_rate"
+    },
+    {
+      "name": "Bidding Strategy Test",
+      "type": "BIDDING_SPLIT",
+      "variants": [
+        {
+          "name": "Lowest Cost",
+          "bid_strategy": "LOWEST_COST",
+          "optimization_goal": "LEAD"
+        },
+        {
+          "name": "Cost Cap",
+          "bid_strategy": "COST_CAP",
+          "optimization_goal": "LEAD",
+          "bid_amount": 50
+        }
+      ],
+      "success_metric": "cost_per_result"
+    }
+  ],
+  "dynamicCreativeTests": {
+    "enabled": true,
+    "elements": {
+      "headlines": [
+        "Get Pre-Approved in 15 Minutes",
+        "Your Dream Home Awaits",
+        "Lowest Rates in Texas",
+        "Zero Down Payment Options",
+        "Bad Credit? No Problem!"
+      ],
+      "descriptions": [
+        "FHA loans from 3.5% down. Apply now!",
+        "VA loans with 0% down for veterans",
+        "Get your custom rate in 60 seconds",
+        "We close in 15 days or less",
+        "First-time buyer? Get special rates"
+      ],
+      "images": [
+        "happy_family_home.jpg",
+        "keys_in_hand.jpg",
+        "modern_kitchen.jpg",
+        "texas_home.jpg",
+        "calculator_rates.jpg"
+      ],
+      "videos": [
+        "testimonial_sarah.mp4",
+        "process_explained.mp4",
+        "rates_animation.mp4"
+      ],
+      "cta_buttons": [
+        "LEARN_MORE",
+        "APPLY_NOW",
+        "GET_OFFER",
+        "SIGN_UP",
+        "CONTACT_US"
+      ]
+    },
+    "optimization_events": [
+      "Lead",
+      "CompleteRegistration"
+    ]
+  },
+  "placementTests": {
+    "automatic_placements": false,
+    "manual_placements": [
+      {
+        "platform": "facebook",
+        "placements": [
+          "feed",
+          "right_column",
+          "marketplace"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "placements": [
+          "feed",
+          "stories",
+          "reels"
+        ]
+      },
+      {
+        "platform": "messenger",
+        "placements": [
+          "inbox"
+        ]
+      },
+      {
+        "platform": "audience_network",
+        "placements": [
+          "native",
+          "interstitial"
+        ]
+      }
+    ],
+    "excluded_placements": [
+      "audience_network_rewarded_video"
+    ]
+  }
+}

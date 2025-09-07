@@ -1,0 +1,131 @@
+{
+  "summary": {
+    "date": "2025-09-07T03:24:39.088Z",
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "warnings": 20
+  },
+  "results": [
+    {
+      "workflow": "ci.yml",
+      "issues": [
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'test.Run linting' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'build.Build application' lacks error handling for commands that might fail"
+        }
+      ]
+    },
+    {
+      "workflow": "daily-automation.yml",
+      "issues": [
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'daily-automation.Run daily automation' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'daily-automation.Generate performance report' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'daily-automation.Send Teams notification' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: TEAMS_WEBHOOK_URL"
+        }
+      ]
+    },
+    {
+      "workflow": "manual-content-generation.yml",
+      "issues": [
+        {
+          "level": "warning",
+          "type": "shell",
+          "message": "Step 'manual-execution.Set up environment variables' has unquoted variables: $FB_AD_ACCOUNT_I, $GITHUB_ENV, $FB_ACCESS_TOKE, $GITHUB_ENV, $FB_PAGE_I, $GITHUB_ENV, $ANTHROPIC_API_KE, $GITHUB_ENV, $GITHUB_TOKE, $GITHUB_ENV"
+        },
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'manual-execution.Test posting capability' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'manual-execution.Post daily content' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "error-handling",
+          "message": "Step 'manual-execution.Dry run simulation' lacks error handling for commands that might fail"
+        },
+        {
+          "level": "warning",
+          "type": "shell",
+          "message": "Step 'manual-execution.Notify completion' has unquoted variables: $TEAMS_WEBHOOK_UR, $CONTENT_TYPE, $STATUS, $CONTENT_TYPE, $DRY_RUN, $TEAMS_WEBHOOK_UR"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: FB_AD_ACCOUNT_ID"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: FB_ACCESS_TOKEN"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: FB_PAGE_ID"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: ANTHROPIC_API_KEY"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: GITHUB_TOKEN"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: TEAMS_WEBHOOK_URL"
+        }
+      ]
+    },
+    {
+      "workflow": "setup-secrets.yml",
+      "issues": [
+        {
+          "level": "warning",
+          "type": "shell",
+          "message": "Step 'setup-secrets.Get secrets from Azure Key Vault and set in GitHub' has unquoted variables: $REP, $AZURE_CRED, $REP"
+        },
+        {
+          "level": "warning",
+          "type": "shell",
+          "message": "Step 'setup-secrets.Verify secrets are set' has unquoted variables: $REP"
+        },
+        {
+          "level": "warning",
+          "type": "security",
+          "message": "Potential hardcoded secret reference: GITHUB_TOKEN"
+        }
+      ]
+    }
+  ]
+}

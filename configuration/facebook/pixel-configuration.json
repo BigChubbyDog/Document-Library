@@ -1,0 +1,30 @@
+{
+  "pixelId": "1072334595033391",
+  "events": [
+    {
+      "name": "PageView",
+      "value": 0
+    },
+    {
+      "name": "Lead",
+      "value": 50
+    },
+    {
+      "name": "CompleteRegistration",
+      "value": 200
+    },
+    {
+      "name": "ViewContent",
+      "value": 0
+    },
+    {
+      "name": "Schedule",
+      "value": 100
+    }
+  ],
+  "customEvents": [
+    "CalculatorUsed",
+    "RateQuoteViewed",
+    "PreApprovalStarted"
+  ]
+}

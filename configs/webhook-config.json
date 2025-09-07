@@ -1,0 +1,20 @@
+{
+  "endpoint": "https://mortgagelc.com/api/facebook-lead",
+  "verifyToken": "mortgage-loans-co-2025",
+  "notifications": {
+    "email": "hello@mortgagelc.com",
+    "sms": "(737) 330-1489",
+    "slack": "#leads-channel"
+  },
+  "autoResponse": {
+    "enabled": true,
+    "message": "Thanks for your interest! A mortgage specialist will contact you within 15 minutes.",
+    "emailTemplate": "welcome-email"
+  },
+  "crm": {
+    "enabled": true,
+    "system": "HubSpot",
+    "apiKey": "",
+    "pipelineId": "mortgage-leads"
+  }
+}

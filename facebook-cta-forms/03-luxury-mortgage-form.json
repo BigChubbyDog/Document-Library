@@ -1,0 +1,351 @@
+{
+  "form_name": "Private Banking Consultation",
+  "campaign_correlation": "Luxury_Mortgage_Exclusivity_Q1_2024_1755654861354",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "High-net-worth individuals, jumbo loans $1M+",
+  "expected_cpl": "$45",
+  "configuration": {
+    "headline": "🏛️ Schedule Your Private Mortgage Consultation",
+    "subheadline": "Exclusive financing solutions for discerning investors and luxury homebuyers",
+    "intro_text": "Distinguished homebuyers deserve distinguished service. Our private banking approach offers specialized portfolio lending, dedicated advisors, and sophisticated wealth integration up to $5M+.",
+    "privacy_statement": "Your information is strictly confidential and will only be used for your private consultation scheduling.",
+    "thank_you_message": {
+      "headline": "🎯 Your Private Consultation is Confirmed",
+      "message": "Your dedicated private mortgage advisor will contact you within 4 hours to schedule your consultation. We'll discuss your unique financing needs and wealth preservation strategies.",
+      "follow_up": "Expect a call from your private advisor at (737) 330-1489"
+    }
+  },
+  "questions": [
+    {
+      "id": "property_type",
+      "type": "multiple_choice",
+      "question": "What type of property are you financing?",
+      "options": [
+        {
+          "text": "🏰 Primary luxury residence",
+          "value": "primary_luxury",
+          "score": 10
+        },
+        {
+          "text": "🏖️ Vacation/Second home",
+          "value": "vacation_home",
+          "score": 9
+        },
+        {
+          "text": "🏢 Investment property",
+          "value": "investment",
+          "score": 8
+        },
+        {
+          "text": "🏗️ Construction/Development",
+          "value": "construction",
+          "score": 9
+        },
+        {
+          "text": "📈 Portfolio refinancing",
+          "value": "portfolio_refi",
+          "score": 7
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "loan_amount",
+      "type": "range_slider",
+      "question": "What's your target loan amount?",
+      "subtitle": "We specialize in jumbo and super jumbo loans",
+      "ranges": [
+        {
+          "label": "$1M - $2M",
+          "value": "1-2m",
+          "category": "jumbo"
+        },
+        {
+          "label": "$2M - $3M",
+          "value": "2-3m",
+          "category": "super_jumbo"
+        },
+        {
+          "label": "$3M - $5M",
+          "value": "3-5m",
+          "category": "portfolio"
+        },
+        {
+          "label": "$5M+",
+          "value": "5m_plus",
+          "category": "private_banking"
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "property_location",
+      "type": "dropdown",
+      "question": "Where is the property located?",
+      "options": [
+        "Texas - Austin Metro",
+        "Texas - Dallas Metro", 
+        "Texas - Houston Metro",
+        "Texas - Other",
+        "California",
+        "Florida",
+        "New York",
+        "Other State"
+      ],
+      "required": true
+    },
+    {
+      "id": "financing_timeline",
+      "type": "multiple_choice",
+      "question": "What's your financing timeline?",
+      "options": [
+        {
+          "text": "🎯 Under contract - need financing",
+          "value": "under_contract",
+          "score": 10
+        },
+        {
+          "text": "🔍 Actively shopping properties",
+          "value": "active_shopping",
+          "score": 9
+        },
+        {
+          "text": "📋 Planning purchase in 3-6 months",
+          "value": "planning_3_6",
+          "score": 7
+        },
+        {
+          "text": "💭 Exploring financing options",
+          "value": "exploring",
+          "score": 5
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "income_structure",
+      "type": "multiple_choice",
+      "question": "How would you describe your income structure?",
+      "subtitle": "This helps us tailor the right loan program",
+      "options": [
+        {
+          "text": "💼 W-2 employed professional",
+          "value": "w2_professional",
+          "score": 8
+        },
+        {
+          "text": "🏢 Business owner/Self-employed",
+          "value": "business_owner",
+          "score": 9
+        },
+        {
+          "text": "📊 Investment income focused",
+          "value": "investment_income",
+          "score": 8
+        },
+        {
+          "text": "🎯 Mixed income sources",
+          "value": "mixed_income",
+          "score": 9
+        },
+        {
+          "text": "🏦 Trust/Estate income",
+          "value": "trust_estate",
+          "score": 7
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "financing_preferences",
+      "type": "multiple_choice",
+      "question": "What's most important to you?",
+      "options": [
+        {
+          "text": "⚡ Speed of execution",
+          "value": "speed",
+          "score": 8
+        },
+        {
+          "text": "💰 Best possible rate",
+          "value": "best_rate",
+          "score": 7
+        },
+        {
+          "text": "📋 Flexible documentation",
+          "value": "flexible_docs",
+          "score": 9
+        },
+        {
+          "text": "🎯 Wealth preservation strategies",
+          "value": "wealth_preservation",
+          "score": 10
+        },
+        {
+          "text": "🤝 Relationship banking approach",
+          "value": "relationship_banking",
+          "score": 9
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "assets_available",
+      "type": "multiple_choice",
+      "question": "Do you have significant liquid assets?",
+      "subtitle": "Asset-based loans may offer better terms",
+      "options": [
+        {
+          "text": "Yes - substantial liquid assets",
+          "value": "substantial_assets",
+          "score": 10
+        },
+        {
+          "text": "Yes - moderate liquid assets",
+          "value": "moderate_assets",
+          "score": 8
+        },
+        {
+          "text": "Primarily illiquid investments",
+          "value": "illiquid_assets",
+          "score": 6
+        },
+        {
+          "text": "Prefer not to disclose",
+          "value": "private",
+          "score": 5
+        }
+      ],
+      "required": false
+    },
+    {
+      "id": "current_banking_relationship",
+      "type": "multiple_choice",
+      "question": "Do you have a private banking relationship?",
+      "options": [
+        {
+          "text": "Yes - with major institution",
+          "value": "major_private_bank",
+          "score": 8
+        },
+        {
+          "text": "Yes - with regional bank",
+          "value": "regional_private_bank",
+          "score": 7
+        },
+        {
+          "text": "No - but interested",
+          "value": "interested_private_bank",
+          "score": 9
+        },
+        {
+          "text": "No - prefer independent lenders",
+          "value": "independent_preference",
+          "score": 10
+        }
+      ],
+      "required": false
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "last_name",
+      "label": "Last Name",
+      "required": true,
+      "placeholder": "Your last name"
+    },
+    {
+      "field": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "Your private advisor will call within 4 hours"
+    },
+    {
+      "field": "preferred_contact_time",
+      "label": "Best time to call",
+      "required": false,
+      "type": "dropdown",
+      "options": [
+        "Morning (8am-12pm)",
+        "Afternoon (12pm-5pm)",
+        "Evening (5pm-8pm)",
+        "Anytime"
+      ]
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": false,
+    "social_proof": {
+      "counter": "Trusted by 150+ high-net-worth clients",
+      "exclusivity": "Invitation-only private banking tier",
+      "testimonial": "\"Exceptional service for sophisticated needs\" - Private Client"
+    },
+    "urgency": {
+      "limited_availability": "Limited private consultation slots available",
+      "exclusive_access": "By invitation and qualification only"
+    },
+    "trust_signals": [
+      "NMLS #2044646",
+      "Private Banking Division",
+      "Jumbo Loan Specialists",
+      "Confidential Consultation",
+      "$5M+ Portfolio Experience"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 35,
+    "warm_lead_threshold": 25,
+    "scoring_factors": {
+      "loan_amount_3m_plus": 10,
+      "loan_amount_5m_plus": 15,
+      "under_contract": 10,
+      "active_shopping": 9,
+      "business_owner": 9,
+      "mixed_income": 9,
+      "wealth_preservation": 10,
+      "substantial_assets": 10,
+      "independent_preference": 10
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_welcome_email": true,
+      "schedule_advisor_call": "4_hours",
+      "add_to_nurture_sequence": "private_banking_vip"
+    },
+    "hot_leads": {
+      "notify_private_advisor": "immediate",
+      "priority_queue": "VIP",
+      "call_within": "2_hours",
+      "send_portfolio_materials": true
+    },
+    "warm_leads": {
+      "email_sequence": "luxury_mortgage_education",
+      "call_within": "8_hours"
+    },
+    "consultation_booking": {
+      "calendar_integration": true,
+      "send_meeting_materials": true,
+      "prepare_custom_proposal": true
+    }
+  },
+  "qualification_criteria": {
+    "minimum_loan_amount": 1000000,
+    "preferred_assets": 500000,
+    "income_verification": "flexible",
+    "credit_score_minimum": 680
+  }
+}

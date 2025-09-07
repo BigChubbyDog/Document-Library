@@ -1,0 +1,32 @@
+[
+  {
+    "name": "🏠 First-Time Home Buyer Program",
+    "description": "Special rates and down payment assistance for first-time buyers. Get into your dream home with as little as 3.5% down!",
+    "price": "Free Consultation",
+    "url": "https://mortgagelc.com/first-time-buyer"
+  },
+  {
+    "name": "🎖️ VA Loans - 0% Down",
+    "description": "Exclusive benefits for veterans and active military. No down payment required and competitive rates!",
+    "price": "No Down Payment",
+    "url": "https://mortgagelc.com/va-loans"
+  },
+  {
+    "name": "💰 Refinancing - Lower Your Payment",
+    "description": "Reduce your monthly payment or cash out equity. Free rate analysis in 60 seconds!",
+    "price": "Save $200-500/month",
+    "url": "https://mortgagelc.com/refinance"
+  },
+  {
+    "name": "📱 15-Minute Pre-Approval",
+    "description": "Get pre-approved online in just 15 minutes. Know your buying power instantly!",
+    "price": "Free",
+    "url": "https://mortgagelc.com/preapproval"
+  },
+  {
+    "name": "🏡 Jumbo Loans",
+    "description": "Financing for luxury homes over $766,550. Competitive rates for high-value properties.",
+    "price": "Loans up to $3M",
+    "url": "https://mortgagelc.com/jumbo"
+  }
+]

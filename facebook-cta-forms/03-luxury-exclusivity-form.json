@@ -1,0 +1,170 @@
+{
+  "form_name": "Private Banking Mortgage Consultation",
+  "campaign_correlation": "Luxury_Mortgage_Exclusivity_Q1_2024_1755654861354",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "High-net-worth individuals aged 35-55, top 10% income",
+  "expected_cpl": "$45",
+  "configuration": {
+    "headline": "Exclusive Mortgage Solutions for Discerning Investors",
+    "subheadline": "Distinguished homebuyers deserve distinguished service",
+    "intro_text": "Our private banking approach to jumbo mortgages offers:\n\n🏛️ Specialized Portfolio Lending Solutions\n💼 Dedicated Private Mortgage Advisor\n📊 Sophisticated Wealth Integration\n🏰 Up to $5M+ Loan Amounts\n\nJoin an exclusive network of high-net-worth borrowers.",
+    "privacy_statement": "Your financial information is handled with the utmost confidentiality and discretion.",
+    "thank_you_message": {
+      "headline": "🏛️ Your Private Consultation is Scheduled",
+      "message": "Our Private Banking team will contact you within 4 hours to schedule your confidential consultation. Expect a call from our senior mortgage advisor.",
+      "follow_up": "Priority consultation line: (737) 330-1489"
+    }
+  },
+  "questions": [
+    {
+      "id": "loan_amount_range",
+      "type": "dropdown",
+      "question": "What loan amount are you considering?",
+      "subtitle": "All conversations remain strictly confidential",
+      "options": [
+        "Under $1M - Traditional Jumbo",
+        "$1M - $2M - Portfolio Lending",
+        "$2M - $3M - Private Banking Solutions", 
+        "$3M - $5M - Wealth Integration",
+        "$5M+ - Ultra High Net Worth Program",
+        "Multiple Properties - Portfolio Approach"
+      ],
+      "required": true
+    },
+    {
+      "id": "property_type",
+      "type": "multiple_choice",
+      "question": "What type of property interests you?",
+      "options": [
+        {"text": "🏡 Primary Residence - Luxury Home", "value": "primary_luxury", "score": 8},
+        {"text": "🏖️ Secondary Home - Vacation Property", "value": "secondary_vacation", "score": 9},
+        {"text": "🏢 Investment Property - Rental Income", "value": "investment_rental", "score": 10},
+        {"text": "🏗️ Construction/Custom Build", "value": "construction_custom", "score": 9},
+        {"text": "🏦 Commercial Real Estate", "value": "commercial", "score": 10},
+        {"text": "📊 Portfolio Expansion", "value": "portfolio_expansion", "score": 10}
+      ],
+      "required": true
+    },
+    {
+      "id": "financing_structure",
+      "type": "multiple_choice",
+      "question": "What financing approach interests you most?",
+      "subtitle": "We customize solutions for complex financial situations",
+      "options": [
+        {"text": "Traditional Income Documentation", "value": "traditional_income", "score": 6},
+        {"text": "Asset-Based Qualification", "value": "asset_based", "score": 9},
+        {"text": "Bank Statement Programs", "value": "bank_statement", "score": 8},
+        {"text": "Complex Income Analysis (Business Owner)", "value": "complex_income", "score": 10},
+        {"text": "Portfolio Lending Solutions", "value": "portfolio_lending", "score": 10},
+        {"text": "Private Banking Integration", "value": "private_banking", "score": 10}
+      ],
+      "required": true
+    },
+    {
+      "id": "timeline_preference",
+      "type": "multiple_choice",
+      "question": "What's your preferred timeline?",
+      "subtitle": "We accommodate your schedule and needs",
+      "options": [
+        {"text": "🚀 Immediate - Property identified", "value": "immediate", "score": 10},
+        {"text": "📅 30-60 days - Actively searching", "value": "30_60_days", "score": 9},
+        {"text": "📊 Pre-approval for property search", "value": "pre_approval", "score": 8},
+        {"text": "🧠 Strategic planning - Future purchase", "value": "strategic_planning", "score": 6},
+        {"text": "💼 Consultation on multiple scenarios", "value": "multiple_scenarios", "score": 7}
+      ],
+      "required": true
+    },
+    {
+      "id": "relationship_preference",
+      "type": "multiple_choice",
+      "question": "How do you prefer to work with financial partners?",
+      "options": [
+        {"text": "🏛️ Dedicated advisor relationship", "value": "dedicated_advisor", "score": 10},
+        {"text": "📞 Direct access to decision makers", "value": "direct_access", "score": 9},
+        {"text": "💼 Integrated wealth management approach", "value": "integrated_wealth", "score": 10},
+        {"text": "🤝 White-glove concierge service", "value": "concierge_service", "score": 8},
+        {"text": "⚡ Efficient, streamlined process", "value": "streamlined", "score": 7}
+      ],
+      "required": true
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "last_name",
+      "label": "Last Name", 
+      "required": true,
+      "placeholder": "Your last name"
+    },
+    {
+      "field": "email",
+      "label": "Preferred Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Direct Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "For confidential consultation scheduling"
+    },
+    {
+      "field": "preferred_contact_time",
+      "label": "Best Time to Call",
+      "required": false,
+      "placeholder": "Mornings, afternoons, evenings"
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": true,
+    "social_proof": {
+      "counter": "Trusted by 1,200+ high-net-worth clients",
+      "testimonial": "\"The most sophisticated mortgage experience I've encountered\" - Real Estate Executive"
+    },
+    "exclusivity": {
+      "membership": "Private Banking Network Member Access",
+      "scarcity": "Limited client capacity - accepting qualified applications"
+    },
+    "trust_signals": [
+      "NMLS #2044646 - Licensed Private Banking Division",
+      "Confidential Client Service Since 2018",
+      "A+ Better Business Bureau Rating",
+      "Approved for loans up to $10M+",
+      "Exclusive wealth integration partnerships"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 35,
+    "warm_lead_threshold": 25,
+    "scoring_factors": {
+      "loan_amount_over_2m": 15,
+      "timeline_immediate": 10,
+      "complex_income_analysis": 10,
+      "portfolio_lending": 12,
+      "dedicated_advisor_preferred": 8,
+      "multiple_properties": 10
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_private_banking_welcome": true,
+      "schedule_consultation": "4_hours",
+      "assign_senior_advisor": true
+    },
+    "hot_leads": {
+      "notify_private_banking_team": "immediate",
+      "priority_queue": "VIP",
+      "consultation_within": "2_hours"
+    },
+    "warm_leads": {
+      "email_sequence": "private_banking_nurture",
+      "consultation_within": "24_hours"
+    }
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "form_name": "VA Loan Benefits Calculator", 
+  "campaign_correlation": "VA_Loan_Specialist_Campaign_2024Q1",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "Military service members and veterans aged 25-65",
+  "expected_cpl": "$29",
+  "configuration": {
+    "headline": "🇺🇸 Veterans: Get Your $0 Down VA Loan Quote",
+    "subheadline": "You've earned this benefit - let our military specialists show you how to use it",
+    "intro_text": "As a veteran-owned lender, we understand your service deserves more than just thanks. Join 250,000+ veterans we've helped secure their dream homes with zero down payment and no PMI.",
+    "privacy_statement": "Your military service information is confidential and will only be used to determine your VA loan benefits.",
+    "thank_you_message": {
+      "headline": "🎖️ Thank You for Your Service!",
+      "message": "Your personalized VA loan benefits summary is ready. Our military specialist will call you within 3 hours to discuss your $0 down options and answer any questions.",
+      "follow_up": "Expect a call from your VA specialist at (737) 330-1489 - a fellow veteran who understands your needs"
+    }
+  },
+  "questions": [
+    {
+      "id": "military_status",
+      "type": "multiple_choice",
+      "question": "What's your military status?",
+      "options": [
+        {
+          "text": "🎖️ Veteran (Honorable discharge)",
+          "value": "veteran_honorable",
+          "score": 10
+        },
+        {
+          "text": "🪖 Active duty military",
+          "value": "active_duty",
+          "score": 10
+        },
+        {
+          "text": "🏛️ National Guard/Reserves",
+          "value": "guard_reserves",
+          "score": 9
+        },
+        {
+          "text": "💍 Military spouse",
+          "value": "military_spouse",
+          "score": 8
+        },
+        {
+          "text": "👨‍👩‍👧‍👦 Surviving spouse of veteran",
+          "value": "surviving_spouse",
+          "score": 8
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "service_length",
+      "type": "multiple_choice",
+      "question": "Length of military service?",
+      "subtitle": "This affects your VA loan eligibility",
+      "options": [
+        {
+          "text": "6+ years service",
+          "value": "6_plus_years",
+          "score": 10
+        },
+        {
+          "text": "2-6 years service",
+          "value": "2_6_years",
+          "score": 9
+        },
+        {
+          "text": "90+ days wartime",
+          "value": "90_days_wartime",
+          "score": 10
+        },
+        {
+          "text": "Still serving",
+          "value": "still_serving",
+          "score": 10
+        },
+        {
+          "text": "Not sure about eligibility",
+          "value": "unsure_eligibility",
+          "score": 7
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "va_loan_usage",
+      "type": "multiple_choice",
+      "question": "Have you used your VA loan benefit before?",
+      "options": [
+        {
+          "text": "🏠 Never used - first time",
+          "value": "never_used",
+          "score": 10
+        },
+        {
+          "text": "🔄 Used once - paid off",
+          "value": "used_paid_off",
+          "score": 9
+        },
+        {
+          "text": "📋 Used once - still have loan",
+          "value": "used_current",
+          "score": 7
+        },
+        {
+          "text": "💡 Not sure if I've used it",
+          "value": "unsure_usage",
+          "score": 6
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "home_goal",
+      "type": "multiple_choice",
+      "question": "What's your home goal?",
+      "options": [
+        {
+          "text": "🏡 Buy my first home",
+          "value": "first_home",
+          "score": 10
+        },
+        {
+          "text": "🔄 Upgrade to bigger home",
+          "value": "upgrade_home",
+          "score": 8
+        },
+        {
+          "text": "📍 PCS move - buying in new location",
+          "value": "pcs_move",
+          "score": 9
+        },
+        {
+          "text": "🔄 Refinance current VA loan",
+          "value": "va_refinance",
+          "score": 8
+        },
+        {
+          "text": "🏠 Cash-out refinance",
+          "value": "va_cash_out",
+          "score": 7
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "price_range",
+      "type": "range_slider",
+      "question": "What's your target price range?",
+      "subtitle": "Remember: $0 down with VA loans!",
+      "ranges": [
+        {
+          "label": "$200K - $300K",
+          "value": "200-300k",
+          "monthly_display": "~$1,600-$2,400/month"
+        },
+        {
+          "label": "$300K - $450K",
+          "value": "300-450k",
+          "monthly_display": "~$2,400-$3,600/month"
+        },
+        {
+          "label": "$450K - $600K",
+          "value": "450-600k",
+          "monthly_display": "~$3,600-$4,800/month"
+        },
+        {
+          "label": "$600K+",
+          "value": "600k_plus",
+          "monthly_display": "~$4,800+/month"
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "location_preference",
+      "type": "dropdown",
+      "question": "Where are you looking to buy?",
+      "options": [
+        "Texas - San Antonio (Military City)",
+        "Texas - Austin Metro",
+        "Texas - Dallas-Fort Worth",
+        "Texas - Houston Metro",
+        "Texas - Other",
+        "Military base location",
+        "Other state"
+      ],
+      "required": true
+    },
+    {
+      "id": "timeline",
+      "type": "multiple_choice",
+      "question": "When do you want to buy/refinance?",
+      "options": [
+        {
+          "text": "🚨 ASAP - PCS orders received",
+          "value": "asap_pcs",
+          "score": 10
+        },
+        {
+          "text": "📅 Within 3 months",
+          "value": "3_months",
+          "score": 9
+        },
+        {
+          "text": "⏰ 3-6 months out",
+          "value": "3_6_months",
+          "score": 8
+        },
+        {
+          "text": "📋 6-12 months planning",
+          "value": "6_12_months",
+          "score": 6
+        },
+        {
+          "text": "💭 Just exploring VA benefits",
+          "value": "exploring",
+          "score": 4
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "current_housing",
+      "type": "multiple_choice",
+      "question": "What's your current housing situation?",
+      "options": [
+        {
+          "text": "🏠 Own home (non-VA loan)",
+          "value": "own_non_va",
+          "score": 7
+        },
+        {
+          "text": "🏡 Own home (VA loan)",
+          "value": "own_va",
+          "score": 8
+        },
+        {
+          "text": "🏘️ Base housing/BAH",
+          "value": "base_housing",
+          "score": 9
+        },
+        {
+          "text": "🏢 Renting civilian housing",
+          "value": "renting",
+          "score": 8
+        },
+        {
+          "text": "👨‍👩‍👧‍👦 Living with family",
+          "value": "with_family",
+          "score": 7
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "va_disability_rating",
+      "type": "multiple_choice",
+      "question": "Do you have a VA disability rating?",
+      "subtitle": "10%+ rating waives VA funding fee (saves thousands!)",
+      "options": [
+        {
+          "text": "Yes - 10% or higher",
+          "value": "10_percent_plus",
+          "score": 10
+        },
+        {
+          "text": "Yes - under 10%",
+          "value": "under_10_percent",
+          "score": 8
+        },
+        {
+          "text": "Pending/In process",
+          "value": "pending",
+          "score": 7
+        },
+        {
+          "text": "No disability rating",
+          "value": "no_rating",
+          "score": 6
+        },
+        {
+          "text": "Not sure",
+          "value": "unsure",
+          "score": 5
+        }
+      ],
+      "required": false
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "last_name",
+      "label": "Last Name",
+      "required": true,
+      "placeholder": "Your last name"
+    },
+    {
+      "field": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "Your VA specialist will call within 3 hours"
+    },
+    {
+      "field": "branch_of_service",
+      "label": "Branch of Service",
+      "required": false,
+      "type": "dropdown",
+      "options": [
+        "Army",
+        "Navy",
+        "Air Force",
+        "Marines",
+        "Coast Guard",
+        "Space Force"
+      ]
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": true,
+    "social_proof": {
+      "counter": "250,000+ veterans helped",
+      "live_activity": "12 veterans got pre-approved today",
+      "testimonial": "\"$0 down, no PMI - used my benefit perfectly!\" - SSG Martinez",
+      "veteran_owned": "Veteran-owned lender - we understand your service"
+    },
+    "urgency": {
+      "rate_lock": "Lock your VA rate today",
+      "pcs_timing": "Beat your PCS deadline",
+      "benefit_utilization": "Use your earned benefit now"
+    },
+    "trust_signals": [
+      "NMLS #2044646",
+      "Veteran-Owned Business",
+      "VA Approved Lender",
+      "Military Specialist Team",
+      "4.9★ Military Reviews"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 30,
+    "warm_lead_threshold": 20,
+    "scoring_factors": {
+      "veteran_honorable": 10,
+      "active_duty": 10,
+      "never_used_va": 10,
+      "asap_pcs": 10,
+      "3_months": 9,
+      "first_home": 10,
+      "pcs_move": 9,
+      "10_percent_plus_disability": 10,
+      "base_housing": 9,
+      "6_plus_years": 10
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_va_benefits_summary": true,
+      "schedule_specialist_call": "3_hours",
+      "add_to_nurture_sequence": "va_loan_education"
+    },
+    "hot_leads": {
+      "notify_va_specialist": "immediate",
+      "priority_queue": "Military_A1",
+      "call_within": "2_hours",
+      "send_va_certificate_info": true
+    },
+    "warm_leads": {
+      "email_sequence": "va_benefits_education",
+      "call_within": "6_hours"
+    },
+    "pcs_urgent": {
+      "fast_track_processing": true,
+      "expedited_pre_approval": true,
+      "dedicated_pcs_specialist": true
+    }
+  },
+  "va_specific_features": {
+    "certificate_eligibility_check": true,
+    "funding_fee_calculator": true,
+    "disability_rating_benefits": true,
+    "pcs_timeline_tracking": true,
+    "multiple_use_explanation": true
+  },
+  "compliance": {
+    "va_approved_messaging": true,
+    "military_specific_disclosures": true,
+    "scra_protections_info": true,
+    "veteran_privacy_protection": true
+  }
+}

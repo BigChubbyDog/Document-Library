@@ -1,0 +1,93 @@
+{
+  "name": "🔑 Get Your Key Rate in 60 Seconds",
+  "description": "Instant rate quote for Texas homebuyers",
+  "campaign_alignment": "Quick Rate Campaign + Your Key to Home branding",
+  "target_audience": "General homebuyers seeking rate quotes",
+  
+  "form_configuration": {
+    "privacy_policy_url": "https://mortgagelc.com/privacy",
+    "follow_up_action_url": "https://mortgagelc.com/thank-you",
+    
+    "opening_hook": "🏠 Join 4,387 Texans who got pre-approved this month! No credit impact, no obligations.",
+    
+    "questions": [
+      {
+        "type": "CUSTOM",
+        "key": "home_goal",
+        "label": "What's your home goal?",
+        "options": [
+          "Buy first home",
+          "Upgrade home", 
+          "Refinance",
+          "Investment property"
+        ],
+        "required": true
+      },
+      {
+        "type": "CUSTOM",
+        "key": "timeline",
+        "label": "When do you want to move?",
+        "options": [
+          "ASAP",
+          "Next 30 days",
+          "1-3 months", 
+          "Just researching"
+        ],
+        "required": true
+      },
+      {
+        "type": "CUSTOM",
+        "key": "location",
+        "label": "Where in Texas?",
+        "options": [
+          "Austin",
+          "Houston",
+          "Dallas",
+          "San Antonio",
+          "Other"
+        ],
+        "required": true
+      },
+      {
+        "type": "FULL_NAME",
+        "required": true
+      },
+      {
+        "type": "EMAIL",
+        "required": true
+      },
+      {
+        "type": "PHONE",
+        "required": true
+      }
+    ],
+    
+    "thank_you_page_message": "🎉 Your custom rate is ready! A mortgage specialist will call you within 15 minutes.",
+    
+    "tracking_parameters": {
+      "utm_source": "facebook",
+      "utm_medium": "lead_form",
+      "utm_campaign": "quick_rate"
+    }
+  },
+  
+  "psychological_elements": {
+    "social_proof": "4,387 Texans got pre-approved this month",
+    "urgency": "60 seconds",
+    "risk_reduction": "No credit impact, no obligations",
+    "progress_tracking": true,
+    "trust_badges": ["NMLS #2044646", "Equal Housing Lender"]
+  },
+  
+  "lead_scoring": {
+    "timeline_asap": 30,
+    "timeline_30_days": 20,
+    "timeline_1_3_months": 10,
+    "timeline_researching": 0,
+    "location_major_city": 10,
+    "goal_buy_first": 15,
+    "goal_upgrade": 10,
+    "goal_refinance": 5,
+    "goal_investment": 20
+  }
+}

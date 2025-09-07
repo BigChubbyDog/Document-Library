@@ -1,0 +1,94 @@
+{
+  "catalog": {
+    "name": "Mortgage Products Catalog",
+    "vertical": "other",
+    "items": [
+      {
+        "id": "fha_loan",
+        "title": "FHA Loan - 3.5% Down",
+        "description": "Perfect for first-time buyers",
+        "availability": "in stock",
+        "condition": "new",
+        "price": "3.5% down",
+        "link": "https://mortgagelc.com/fha",
+        "image_link": "https://mortgagelc.com/images/fha.jpg",
+        "custom_label_0": "first_time",
+        "custom_label_1": "low_down_payment"
+      },
+      {
+        "id": "va_loan",
+        "title": "VA Loan - 0% Down",
+        "description": "Exclusive for veterans",
+        "availability": "in stock",
+        "condition": "new",
+        "price": "0% down",
+        "link": "https://mortgagelc.com/va",
+        "image_link": "https://mortgagelc.com/images/va.jpg",
+        "custom_label_0": "veterans",
+        "custom_label_1": "no_down_payment"
+      },
+      {
+        "id": "conventional",
+        "title": "Conventional Loan",
+        "description": "Best rates available",
+        "availability": "in stock",
+        "condition": "new",
+        "price": "5% down",
+        "link": "https://mortgagelc.com/conventional",
+        "image_link": "https://mortgagelc.com/images/conventional.jpg",
+        "custom_label_0": "standard",
+        "custom_label_1": "best_rates"
+      },
+      {
+        "id": "jumbo",
+        "title": "Jumbo Loan",
+        "description": "For luxury homes",
+        "availability": "in stock",
+        "condition": "new",
+        "price": "10% down",
+        "link": "https://mortgagelc.com/jumbo",
+        "image_link": "https://mortgagelc.com/images/jumbo.jpg",
+        "custom_label_0": "luxury",
+        "custom_label_1": "high_value"
+      }
+    ]
+  },
+  "dynamicRetargeting": {
+    "enabled": true,
+    "rules": [
+      {
+        "name": "Show viewed loan type",
+        "audience": "website_visitors_30d",
+        "product_set": "viewed_products",
+        "template": "single_product"
+      },
+      {
+        "name": "Cross-sell related loans",
+        "audience": "lead_not_converted",
+        "product_set": "complementary_products",
+        "template": "carousel"
+      },
+      {
+        "name": "Upsell to jumbo",
+        "audience": "high_income_segment",
+        "product_set": "premium_products",
+        "template": "collection"
+      }
+    ]
+  },
+  "dynamicLanguage": {
+    "enabled": true,
+    "languages": [
+      "en_US",
+      "es_ES"
+    ],
+    "auto_translate": false,
+    "customMessages": {
+      "es_ES": {
+        "headline": "Préstamos Hipotecarios en Texas",
+        "description": "Aprobación en 15 minutos",
+        "cta": "Aplicar Ahora"
+      }
+    }
+  }
+}

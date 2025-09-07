@@ -1,0 +1,323 @@
+{
+  "form_name": "Refinance Savings Calculator",
+  "campaign_correlation": "Refi_RateDrop_Q1_2024_1755654844771",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "Homeowners aged 35-65, income $100K+",
+  "expected_cpl": "$38",
+  "configuration": {
+    "headline": "⚡ Calculate Your $457/Month Savings",
+    "subheadline": "Rates just dropped! See your personalized refinance savings in 60 seconds",
+    "intro_text": "🏠 Homeowners: Lock in TODAY's lower rates before they rise again! Find out exactly how much you could save monthly with no closing costs options available.",
+    "privacy_statement": "Your information is secure and will only be used to calculate your refinance savings.",
+    "thank_you_message": {
+      "headline": "💰 Your Savings Report is Ready!",
+      "message": "Check your email for your personalized savings calculation. Our refinance specialist will text you within 2 hours with rate lock options.",
+      "follow_up": "URGENT: These rates won't last long. Your specialist will call from (737) 330-1489"
+    }
+  },
+  "questions": [
+    {
+      "id": "current_mortgage_balance",
+      "type": "range_slider",
+      "question": "What's your approximate mortgage balance?",
+      "subtitle": "This helps us calculate your exact savings",
+      "ranges": [
+        {
+          "label": "$100K - $200K",
+          "value": "100-200k",
+          "savings_estimate": "$200-400/month"
+        },
+        {
+          "label": "$200K - $350K",
+          "value": "200-350k",
+          "savings_estimate": "$400-700/month"
+        },
+        {
+          "label": "$350K - $500K",
+          "value": "350-500k",
+          "savings_estimate": "$700-1000/month"
+        },
+        {
+          "label": "$500K+",
+          "value": "500k_plus",
+          "savings_estimate": "$1000+/month"
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "current_interest_rate",
+      "type": "dropdown",
+      "question": "What's your current interest rate?",
+      "subtitle": "Check your latest mortgage statement",
+      "options": [
+        "7.0% or higher",
+        "6.5% - 6.9%",
+        "6.0% - 6.4%",
+        "5.5% - 5.9%",
+        "5.0% - 5.4%",
+        "Under 5.0%",
+        "Not sure"
+      ],
+      "required": true,
+      "scoring": {
+        "7.0% or higher": 10,
+        "6.5% - 6.9%": 9,
+        "6.0% - 6.4%": 7,
+        "5.5% - 5.9%": 5,
+        "5.0% - 5.4%": 3,
+        "Under 5.0%": 1,
+        "Not sure": 5
+      }
+    },
+    {
+      "id": "loan_term_remaining",
+      "type": "multiple_choice",
+      "question": "How much time is left on your mortgage?",
+      "options": [
+        {
+          "text": "25+ years remaining",
+          "value": "25_plus_years",
+          "score": 10
+        },
+        {
+          "text": "20-25 years remaining",
+          "value": "20-25_years",
+          "score": 8
+        },
+        {
+          "text": "15-20 years remaining",
+          "value": "15-20_years",
+          "score": 6
+        },
+        {
+          "text": "10-15 years remaining",
+          "value": "10-15_years",
+          "score": 4
+        },
+        {
+          "text": "Under 10 years remaining",
+          "value": "under_10_years",
+          "score": 2
+        },
+        {
+          "text": "Not sure",
+          "value": "unknown",
+          "score": 5
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "refinance_goal",
+      "type": "multiple_choice",
+      "question": "What's your main refinance goal?",
+      "options": [
+        {
+          "text": "💰 Lower my monthly payment",
+          "value": "lower_payment",
+          "score": 10
+        },
+        {
+          "text": "🏠 Cash out for home improvements",
+          "value": "cash_out",
+          "score": 8
+        },
+        {
+          "text": "📅 Pay off loan faster",
+          "value": "shorter_term",
+          "score": 6
+        },
+        {
+          "text": "🔄 Switch from ARM to fixed",
+          "value": "arm_to_fixed",
+          "score": 9
+        },
+        {
+          "text": "💡 Just exploring options",
+          "value": "exploring",
+          "score": 3
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "home_value",
+      "type": "range_slider",
+      "question": "What's your home worth today?",
+      "subtitle": "We can help with a free valuation if you're not sure",
+      "ranges": [
+        {
+          "label": "$200K - $350K",
+          "value": "200-350k"
+        },
+        {
+          "label": "$350K - $500K",
+          "value": "350-500k"
+        },
+        {
+          "label": "$500K - $750K",
+          "value": "500-750k"
+        },
+        {
+          "label": "$750K+",
+          "value": "750k_plus"
+        },
+        {
+          "label": "Not sure - need valuation",
+          "value": "need_valuation"
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "credit_score",
+      "type": "multiple_choice",
+      "question": "What's your credit score range?",
+      "subtitle": "Higher scores = better rates",
+      "options": [
+        {
+          "text": "740+ (Excellent)",
+          "value": "740_plus",
+          "score": 10
+        },
+        {
+          "text": "680-739 (Good)",
+          "value": "680-739",
+          "score": 8
+        },
+        {
+          "text": "620-679 (Fair)",
+          "value": "620-679",
+          "score": 6
+        },
+        {
+          "text": "Under 620 (Needs work)",
+          "value": "under_620",
+          "score": 4
+        },
+        {
+          "text": "Not sure",
+          "value": "unknown",
+          "score": 5
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "refinance_timeline",
+      "type": "multiple_choice",
+      "question": "When do you want to refinance?",
+      "options": [
+        {
+          "text": "🚨 ASAP - lock today's rates",
+          "value": "asap",
+          "score": 10
+        },
+        {
+          "text": "📅 Within 30 days",
+          "value": "30_days",
+          "score": 9
+        },
+        {
+          "text": "⏰ Within 90 days",
+          "value": "90_days",
+          "score": 7
+        },
+        {
+          "text": "💭 Just getting rates",
+          "value": "rate_shopping",
+          "score": 4
+        }
+      ],
+      "required": true
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "We'll text your savings calculation instantly!"
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": true,
+    "social_proof": {
+      "counter": "1,247 homeowners saved money this week",
+      "live_activity": "32 people calculating savings right now",
+      "testimonial": "\"Saved $457/month with zero closing costs!\" - Sarah M."
+    },
+    "urgency": {
+      "timer": "Rate lock expires in: 4:23:15",
+      "scarcity": "Rates rising soon - Fed meeting this Friday",
+      "limited_time": "No closing costs offer ends Monday"
+    },
+    "trust_signals": [
+      "NMLS #2044646",
+      "4.9★ Refinance Reviews",
+      "21-Day Close Guarantee",
+      "Rate Match Promise"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 30,
+    "warm_lead_threshold": 20,
+    "scoring_factors": {
+      "current_rate_7_plus": 10,
+      "current_rate_6_5_plus": 9,
+      "timeline_asap": 10,
+      "timeline_30_days": 9,
+      "credit_740_plus": 10,
+      "loan_term_25_plus": 10,
+      "balance_350k_plus": 8,
+      "goal_lower_payment": 10
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_savings_calculation": true,
+      "schedule_text_followup": "2_hours",
+      "add_to_nurture_sequence": "refinance_urgency"
+    },
+    "hot_leads": {
+      "notify_loan_officer": "immediate",
+      "priority_queue": "A1",
+      "call_within": "1_hour",
+      "send_rate_lock_offer": true
+    },
+    "warm_leads": {
+      "email_sequence": "refinance_education_5_day",
+      "call_within": "4_hours"
+    },
+    "cold_leads": {
+      "email_sequence": "rate_watch_alerts",
+      "retry_contact": "48_hours"
+    }
+  },
+  "dynamic_content": {
+    "savings_calculator": {
+      "display_estimated_savings": true,
+      "show_no_closing_costs": true,
+      "highlight_monthly_savings": true
+    },
+    "rate_display": {
+      "show_current_rates": true,
+      "emphasize_rate_drop": true,
+      "countdown_timer": true
+    }
+  }
+}

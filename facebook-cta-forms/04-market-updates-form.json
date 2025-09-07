@@ -1,0 +1,321 @@
+{
+  "form_name": "Market Intelligence VIP Access",
+  "campaign_correlation": "Market_Updates_Retargeting_Q1_2024",
+  "form_type": "facebook_lead_ad",
+  "target_audience": "Warm audience - website visitors, email subscribers, calculator users",
+  "expected_cpl": "$22",
+  "configuration": {
+    "headline": "Breaking: Mortgage Rate Forecast Alert 📊",
+    "subheadline": "Our analysts predict significant rate movements in Q1 2024",
+    "intro_text": "Stay ahead of market changes with our expert insights. Understanding how the latest Fed decisions affect your mortgage options. Local market conditions are shifting - see how these changes could impact your home financing options.",
+    "privacy_statement": "Your information will only be used to deliver market updates and rate alerts.",
+    "thank_you_message": {
+      "headline": "🎯 Welcome to Market Intelligence VIP!",
+      "message": "You'll receive your first market update within the hour, plus personalized rate alerts when rates hit your target. Our market analyst will also text you breaking news.",
+      "follow_up": "Watch for instant rate alerts from (737) 330-1489"
+    }
+  },
+  "questions": [
+    {
+      "id": "market_interest",
+      "type": "multiple_choice",
+      "question": "What market information interests you most?",
+      "options": [
+        {
+          "text": "📈 Fed meeting impact analysis",
+          "value": "fed_analysis",
+          "score": 9
+        },
+        {
+          "text": "🏠 Local housing market trends",
+          "value": "local_trends",
+          "score": 8
+        },
+        {
+          "text": "💰 Rate forecasts & predictions",
+          "value": "rate_forecasts",
+          "score": 10
+        },
+        {
+          "text": "📊 Economic indicators breakdown",
+          "value": "economic_indicators",
+          "score": 7
+        },
+        {
+          "text": "🎯 Investment property insights",
+          "value": "investment_insights",
+          "score": 8
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "current_situation",
+      "type": "multiple_choice",
+      "question": "What's your current situation?",
+      "options": [
+        {
+          "text": "🏠 Current homeowner",
+          "value": "current_homeowner",
+          "score": 8
+        },
+        {
+          "text": "🔍 Looking to buy soon",
+          "value": "buying_soon",
+          "score": 10
+        },
+        {
+          "text": "🔄 Considering refinancing",
+          "value": "considering_refi",
+          "score": 9
+        },
+        {
+          "text": "📈 Real estate investor",
+          "value": "investor",
+          "score": 8
+        },
+        {
+          "text": "💡 Just staying informed",
+          "value": "staying_informed",
+          "score": 5
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "rate_alert_threshold",
+      "type": "dropdown",
+      "question": "Alert me when 30-year rates hit:",
+      "subtitle": "We'll text you instantly when rates hit your target",
+      "options": [
+        "6.0% or lower",
+        "6.25% or lower", 
+        "6.5% or lower",
+        "6.75% or lower",
+        "7.0% or lower",
+        "Any significant change"
+      ],
+      "required": true,
+      "scoring": {
+        "6.0% or lower": 10,
+        "6.25% or lower": 9,
+        "6.5% or lower": 8,
+        "6.75% or lower": 7,
+        "7.0% or lower": 6,
+        "Any significant change": 5
+      }
+    },
+    {
+      "id": "preferred_frequency",
+      "type": "multiple_choice",
+      "question": "How often do you want market updates?",
+      "options": [
+        {
+          "text": "📱 Breaking news only",
+          "value": "breaking_news",
+          "score": 7
+        },
+        {
+          "text": "📅 Weekly market summary",
+          "value": "weekly",
+          "score": 8
+        },
+        {
+          "text": "📊 Bi-weekly deep dive",
+          "value": "biweekly",
+          "score": 6
+        },
+        {
+          "text": "📈 Monthly comprehensive report",
+          "value": "monthly",
+          "score": 4
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "market_experience",
+      "type": "multiple_choice",
+      "question": "How would you describe your market knowledge?",
+      "options": [
+        {
+          "text": "🎓 Very knowledgeable - I follow trends",
+          "value": "very_knowledgeable",
+          "score": 6
+        },
+        {
+          "text": "📚 Somewhat informed - learning more",
+          "value": "somewhat_informed",
+          "score": 8
+        },
+        {
+          "text": "🌱 New to this - need guidance",
+          "value": "new_guidance",
+          "score": 9
+        },
+        {
+          "text": "💼 Professional - I advise others",
+          "value": "professional",
+          "score": 5
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "timeline_interest",
+      "type": "multiple_choice",
+      "question": "When might you need mortgage services?",
+      "options": [
+        {
+          "text": "🚨 Actively in the market now",
+          "value": "active_now",
+          "score": 10
+        },
+        {
+          "text": "📅 Within 3-6 months",
+          "value": "3_6_months",
+          "score": 9
+        },
+        {
+          "text": "🎯 6-12 months out",
+          "value": "6_12_months",
+          "score": 7
+        },
+        {
+          "text": "🔮 Timing depends on rates",
+          "value": "rate_dependent",
+          "score": 8
+        },
+        {
+          "text": "💭 Just staying informed",
+          "value": "informed_only",
+          "score": 3
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "content_preference",
+      "type": "multiple_choice",
+      "question": "How do you prefer to receive updates?",
+      "options": [
+        {
+          "text": "📧 Email newsletters",
+          "value": "email",
+          "score": 5
+        },
+        {
+          "text": "📱 Text alerts",
+          "value": "text",
+          "score": 8
+        },
+        {
+          "text": "📊 Video analysis",
+          "value": "video",
+          "score": 7
+        },
+        {
+          "text": "🎯 All formats",
+          "value": "all_formats",
+          "score": 9
+        }
+      ],
+      "required": true
+    }
+  ],
+  "contact_fields": [
+    {
+      "field": "first_name",
+      "label": "First Name",
+      "required": true,
+      "placeholder": "Your first name"
+    },
+    {
+      "field": "email",
+      "label": "Email",
+      "required": true,
+      "placeholder": "your@email.com"
+    },
+    {
+      "field": "phone",
+      "label": "Phone",
+      "required": true,
+      "placeholder": "(555) 123-4567",
+      "subtitle": "For instant rate alerts and breaking news"
+    }
+  ],
+  "psychological_elements": {
+    "progress_bar": true,
+    "social_proof": {
+      "counter": "Join 12,847 market insiders",
+      "live_activity": "89 people signed up for alerts today",
+      "testimonial": "\"Got the rate drop alert before it hit the news!\" - Michael R."
+    },
+    "urgency": {
+      "market_timing": "Next Fed meeting in 8 days",
+      "exclusive_access": "VIP access - limited enrollment",
+      "rate_movement": "Rates moved 3 times this week"
+    },
+    "trust_signals": [
+      "NMLS #2044646",
+      "15+ Years Market Analysis",
+      "Featured in Texas Real Estate Weekly",
+      "98% Accuracy Rate Forecasts"
+    ]
+  },
+  "lead_scoring": {
+    "hot_lead_threshold": 25,
+    "warm_lead_threshold": 18,
+    "scoring_factors": {
+      "active_now": 10,
+      "buying_soon": 10,
+      "considering_refi": 9,
+      "rate_alert_6_0": 10,
+      "rate_alert_6_25": 9,
+      "3_6_months": 9,
+      "rate_dependent": 8,
+      "all_formats": 9,
+      "text_preference": 8
+    }
+  },
+  "automation_triggers": {
+    "immediate": {
+      "send_welcome_email": true,
+      "setup_rate_alerts": true,
+      "add_to_nurture_sequence": "market_intelligence_vip"
+    },
+    "hot_leads": {
+      "notify_market_specialist": "immediate",
+      "priority_queue": "A2",
+      "call_within": "4_hours",
+      "send_exclusive_report": true
+    },
+    "warm_leads": {
+      "email_sequence": "market_education_series",
+      "weekly_updates": true
+    },
+    "rate_alerts": {
+      "monitor_target_rates": true,
+      "instant_text_alerts": true,
+      "email_rate_summaries": "weekly"
+    }
+  },
+  "content_delivery": {
+    "weekly_newsletter": {
+      "market_analysis": true,
+      "rate_forecasts": true,
+      "fed_meeting_previews": true,
+      "local_market_data": true
+    },
+    "instant_alerts": {
+      "rate_drops": true,
+      "fed_announcements": true,
+      "market_breaking_news": true
+    },
+    "monthly_reports": {
+      "comprehensive_analysis": true,
+      "forecast_accuracy": true,
+      "market_predictions": true
+    }
+  }
+}
